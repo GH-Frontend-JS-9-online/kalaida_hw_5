@@ -1,0 +1,15 @@
+.top {
+  width: $defaultWidth;
+  min-height: 1000px;
+  background-image: url('../img/Photo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__container {
+    width: 80%;
+    min-height: 1000px;
+    margin: $defaultContainerMargin;
+    display: $defaultDisplay;
+    flex-direction: $defaultFlexDirection;
+  }
+}
