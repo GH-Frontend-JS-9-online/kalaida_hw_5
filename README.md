@@ -1,4 +1,4 @@
-kalaida_hw_5 - NOT READY
+kalaida_hw_5 - READY
 -
 - browser-sync
 - sass/scss

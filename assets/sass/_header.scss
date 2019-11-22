@@ -34,9 +34,16 @@
     display: $defaultDisplay;
     align-items: $defaultAlignItems;
     justify-content: flex-end;
+    &--link {
+      color: #fa5c65;
+      font-size: 24px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
   &__nav {
     display: $defaultDisplay;
+    border-radius: 5px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -54,6 +61,83 @@
       }
       &:active {
         color: #20313C;
+      }
+    }
+  }
+}
+
+@media(min-width: 1300px) and (max-width: 2020px) {
+  .header {
+    &__nav {
+      min-height: 35px;
+      align-items: center;
+      border-radius: 5px;
+      background: #fa5c65;
+      &--link {
+        color: $defaultColor;
+        &:hover {
+          color: #E1E1E1;
+        }
+        &:active {
+          color: #EAEAEA;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 800px) and (max-width: 1070px) {
+  .header {
+    &__left {
+      width: 30%;
+    }
+    &__right {
+      width: 70%;
+    }
+  }
+}
+
+@media(min-width: 320px) and (max-width: 799px) {
+  .header {
+    &__container {
+      flex-direction: $defaultFlexDirection;
+    }
+    &__left {
+      width: 100%;
+      display: $defaultDisplay;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+    &__right {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+@media(min-width: 320px) and (max-width: 500px) {
+  .header {
+    &__nav {
+      margin-bottom: 10px;
+    }
+    &__right {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media(min-width: 320px) and (max-width: 450px) {
+  .header {
+    &__nav {
+      margin-bottom: 10px;
+      &--link {
+        font-size: 12px;
+      }
+    }
+    &__right {
+      &--link {
+        font-size: 20px;
       }
     }
   }
